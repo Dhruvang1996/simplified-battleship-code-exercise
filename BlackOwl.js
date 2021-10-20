@@ -60,7 +60,7 @@ const firePlayer = (n, board1, board2) => {
   });
 
   return new Promise((resolve, _) => {
-    fire.question(`Player ${n}: Provide a location to heat Player ${n===1 ? 2 : 1} ship.\n`, async (answer) => {
+    fire.question(`Player ${n}: Provide a location to heat Player ${n===1 ? 2 : 1} ship. Format : B5\n`, async (answer) => {
       let ans = answer.trim();
       if (ans.length === 2) {
         fire.close();
